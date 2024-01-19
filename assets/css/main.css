@@ -257,6 +257,7 @@ header {
 
 header>p {
 	margin: 1em 0 0 0;
+	pointer-events: none;
 }
 
 footer {
@@ -2361,8 +2362,9 @@ button:active,
 	border-color: inherit;
 }
 
+
 #main>section.dark a:hover {
-	border-bottom-color: rgba(255, 255, 255, 0);
+	background-color: #ffffff21;
 }
 
 #main>section.cover {
@@ -2373,11 +2375,47 @@ button:active,
 
 #main>section.one {
 	background-color: #81918E;
-	background-image: url("../../images/banner.jpg");
+	background-image: url("../../images/background.jpg");
+	height: 100vh
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 10px;
+}
+
+.grid-item {
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	border-bottom: none;
+}
+
+.grid-item:nth-child(-n+2) {
+	grid-column: span 3;
+}
+
+.grid-item:nth-child(n+3) {
+	grid-column: span 2;
 }
 
 #main>section.two {
-	background-color: #f5fafa;
+	background-color: #ffffff8f;
+}
+
+.tabcontent {
+	display: none;
+}
+
+.tabcontent.active {
+	display: block;
+}
+
+.tablink {
+	background-color: #008CBA;
+	font-size: 1rem;
+	margin: 1.5em;
 }
 
 #main>section.three {
