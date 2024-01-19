@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Prologue by HTML5 UP</title>
+	<title>Bobbygrdn</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -26,9 +26,9 @@
 			<nav id="nav">
 				<ul>
 					<li><a href="#top" id="top-link" style="font-size: 30px;"><span
-								class="icon solid fa-home">Intro</span></a></li>
+								class="icon solid fa-home">Introduction</span></a></li>
 					<li><a href="#portfolio" id="portfolio-link" style="font-size: 30px;"><span
-								class="icon solid fa-th">Portfolio</span></a>
+								class="icon solid fa-th">Projects</span></a>
 					</li>
 					<li><a href="#about" id="about-link" style="font-size: 30px;"><span class="icon solid fa-user">About
 								Me</span></a></li>
@@ -44,7 +44,7 @@
 				<li><a href="https://www.github.com/bobbygrdn" class="icon brands fa-github"
 						style="font-size: 40px;"><span class="label">Github</span></a></li>
 				<li><a href="https://www.linkedin.com/in/bobbygrdn/" class="icon brands fa-linkedin"
-						style="font-size: 40px;"><span class="label">Github</span></a></li>
+						style="font-size: 40px;"><span class="label">Linkedin</span></a></li>
 				<li><a href="mailto:bobbygrdn777@gmail.com" class="icon solid fa-envelope"
 						style="font-size: 40px;"><span class="label">Email</span></a></li>
 			</ul>
@@ -61,15 +61,36 @@
 			<div class="container">
 
 				<header>
-					<h2 class="alt">Hi! I'm <strong>Prologue</strong>, a <a href="http://html5up.net/license">free</a>
-						responsive<br />
-						site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
-					<p>Ligula scelerisque justo sem accumsan diam quis<br />
-						vitae natoque dictum sollicitudin elementum.</p>
+					<h2 class="alt" style="pointer-events: none; text-shadow:1px 1px 1px #FFF;">Hi! I'm <strong>Robert
+							Gordon</strong>, a
+						<strong>Gameplay Engineer</strong>
+						<br />
+					</h2>
+					<p style="text-shadow:1px 1px 1px #FFF;">I am passionate about creating user-friendly games
+						that all ages can enjoy. I leverage the power of C#, C++, Unreal, Unity and the Godot Game
+						Engines to develop diverse 2D and 3D gaming experiences.</p>
+					<div class="grid-container">
+						<a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer" class="grid-item"> <img
+								src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
+								alt="csharp" height="100" width="100" /> </a>
+						<a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer" class="grid-item">
+							<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
+								alt="cplusplus" height="100" width="100" /> </a>
+						<a href="https://unrealengine.com/" target="_blank" rel="noreferrer" class="grid-item"> <img
+								src="https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg"
+								alt="unreal" height="100" width="100" /> </a>
+						<a href="https://unity.com/" target="_blank" rel="noreferrer" class="grid-item"> <img
+								src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity"
+								height="100" width="100" /> </a>
+						<a href="https://godotengine.org/" target="_blank" rel="noreferrer" class="grid-item"> <img
+								src="https://godotengine.org/assets/press/icon_color.png" alt="godot" height="100"
+								width="100" /> </a>
+					</div>
 				</header>
 
 				<footer>
-					<a href="#portfolio" class="button scrolly">Checkout my projects!</a>
+					<a href="#portfolio" class="button scrolly" id="checkout"
+						style="background-color: #008CBA;">Checkout my projects!</a>
 				</footer>
 
 			</div>
@@ -80,15 +101,31 @@
 			<div class="container">
 
 				<header>
-					<h2>Portfolio</h2>
+					<h2 style="color: #000; text-shadow: 1px 1px 1px #000;">Projects</h2>
 				</header>
 
-				<p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-					egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-					Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-					fusce hendrerit lacus ridiculus.</p>
+				<div class="tabs">
+					<button class="tablink" onclick="openTab(event, 'Tab1')">Unreal</button>
+					<button class="tablink" onclick="openTab(event, 'Tab2')">Unity</button>
+					<button class="tablink" onclick="openTab(event, 'Tab3')">Godot</button>
+				</div>
 
-				<div class="row">
+				<div id="Tab1" class="tabcontent" style="display: block;">
+					<h3>Tab 1</h3>
+					<p>Content for Tab 1.</p>
+				</div>
+
+				<div id="Tab2" class="tabcontent">
+					<h3>Tab 2</h3>
+					<p>Content for Tab 2.</p>
+				</div>
+
+				<div id="Tab3" class="tabcontent">
+					<h3>Tab 3</h3>
+					<p>Content for Tab 3.</p>
+				</div>
+
+				<!-- <div class="row">
 					<div class="col-4 col-12-mobile">
 						<article class="item">
 							<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
@@ -131,7 +168,7 @@
 							</header>
 						</article>
 					</div>
-				</div>
+				</div> -->
 
 			</div>
 		</section>
@@ -177,6 +214,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/tabs.js"></script>
 
 </body>
 
