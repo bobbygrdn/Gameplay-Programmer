@@ -2401,7 +2401,8 @@ button:active,
 }
 
 #main>section.two {
-	background-color: #ffffff8f;
+	background-color: #212020;
+	height: 100vh;
 }
 
 .tabcontent {
@@ -2416,6 +2417,18 @@ button:active,
 	background-color: #008CBA;
 	font-size: 1rem;
 	margin: 1.5em;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #000;
+}
+
+.tablink:hover {
+	background-color: #555;
+}
+
+#Tab1,
+#Tab2,
+#Tab3 {
+	border: 2px solid whitesmoke;
 }
 
 #main>section.three {
