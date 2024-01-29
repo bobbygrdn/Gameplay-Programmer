@@ -339,7 +339,7 @@ br.clear {
 .item.card {
 	padding: 20px;
 	margin: 20px;
-	border: 10px solid #ddd;
+	border: 10px solid rgb(71, 71, 71);
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 	border-radius: 10px;
 	background: radial-gradient(circle at center, rgb(164, 164, 164), rgb(86, 86, 86));
@@ -2328,7 +2328,7 @@ button:active,
 /* Footer */
 
 #footer {
-	margin-left: 375px;
+	/* margin-left: 375px; */
 	text-align: center;
 	background-color: #dce3e2;
 	padding: 1em 0 1em 0;
@@ -2471,6 +2471,10 @@ button:active,
 
 #main>section.three h2 {
 	color: #fff;
+}
+
+#main>section.three strong {
+	color: lightskyblue;
 }
 
 #main>section.four {
