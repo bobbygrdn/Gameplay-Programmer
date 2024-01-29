@@ -2477,6 +2477,10 @@ button:active,
 	color: lightskyblue;
 }
 
+#main>section.three p {
+	pointer-events: none;
+}
+
 #main>section.four {
 	background-color: #e8edec;
 }
