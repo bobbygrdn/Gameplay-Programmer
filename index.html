@@ -25,12 +25,14 @@
 			<!-- Nav -->
 			<nav id="nav">
 				<ul>
-					<li><a href="#top" id="top-link" style="font-size: 30px;"><span
+					<li><a href="javascript:void(0)" data-section="top" id="top-link" style="font-size: 30px;"><span
 								class="icon solid fa-home">Introduction</span></a></li>
-					<li><a href="#portfolio" id="portfolio-link" style="font-size: 30px;"><span
-								class="icon solid fa-th">Projects</span></a></li>
-					<li><a href="#about" id="about-link" style="font-size: 30px;"><span class="icon solid fa-user">About
-								Me</span></a></li>
+					<li><a href="javascript:void(0)" data-section="portfolio" id="portfolio-link"
+							style="font-size: 30px;"><span class="icon solid fa-th">Projects</span></a></li>
+					<li class="desktop"><a href="javascript:void(0)" data-section="about" id="about-link"
+							style="font-size: 30px;"><span class="icon solid fa-user">About Me</span></a></li>
+					<li class="mobile"><a href="javascript:void(0)" data-section="about" id="about-link-mobile"
+							style="font-size: 30px;"><span class="icon solid fa-user">About Me</span></a></li>
 				</ul>
 			</nav>
 
@@ -46,6 +48,10 @@
 						style="font-size: 40px;"><span class="label">Linkedin</span></a></li>
 				<li><a href="mailto:bobbygrdn777@gmail.com" class="icon solid fa-envelope"
 						style="font-size: 40px;"><span class="label">Email</span></a></li>
+			</ul>
+
+			<ul class="copyright">
+				<li>&copy; Bobbygrdn All rights reserved | 2024</li>
 			</ul>
 
 		</div>
@@ -87,11 +93,6 @@
 								width="100" /> </a>
 					</div>
 				</header>
-
-				<footer>
-					<a href="#portfolio" class="button scrolly" id="checkout"
-						style="background-color: #008CBA;">Checkout my projects!</a>
-				</footer>
 
 			</div>
 		</section>
@@ -225,22 +226,22 @@
 					<h2>About Me</h2>
 				</header>
 
-				<p>I have been a gamer my entire life. I started playing video games on the old <strong>Atari 2600</strong> playing my first game... <strong>Pitfall</strong>. Ever since then I have played every console I could get my hands on and found one of my true passions through the storytelling of the gaming world. My all time favorite games are <strong>Action RPGs</strong>. Some of my favorite titles are the <strong>Mass Effect Series</strong>, the <strong>Assassin's Creed series</strong>, and the <strong>Deus Ex series</strong>.</p>
-				<p>I started my programming journey as a <strong>Front-End Developer</strong> which turned into me becoming a <strong>Full-Stack Web Developer</strong>. Unable to find my true home, I turned to the gaming industry and have trained relentlessly to become a <strong>Gameplay Engineer</strong>. My jouney has taken me through several programming languages, several game engines and a few Game Jams.</p>
-				<p>My goal is to be a valuable asset to a game studio who wants to bring the best form of storytelling to life and create a product that gamers everywhere will love for years to come.</p>
+				<p>I have been a gamer my entire life. I started playing video games on the old <strong>Atari
+						2600</strong> playing my first game... <strong>Pitfall</strong>. Ever since then I have played
+					every console I could get my hands on and found one of my true passions through the storytelling of
+					the gaming world. My all time favorite games are <strong>Action RPGs</strong>. Some of my favorite
+					titles are the <strong>Mass Effect Series</strong>, the <strong>Assassin's Creed series</strong>,
+					and the <strong>Deus Ex series</strong>.</p>
+				<p>I started my programming journey as a <strong>Front-End Developer</strong> which turned into me
+					becoming a <strong>Full-Stack Web Developer</strong>. Unable to find my true home, I turned to the
+					gaming industry and have trained relentlessly to become a <strong>Gameplay Engineer</strong>. My
+					jouney has taken me through several programming languages, several game engines and a few Game Jams.
+				</p>
+				<p>My goal is to be a valuable asset to a game studio who wants to bring the best form of storytelling
+					to life and create a product that gamers everywhere will love for years to come.</p>
 
 			</div>
 		</section>
-
-	</div>
-
-	<!-- Footer -->
-	<div id="footer">
-
-		<!-- Copyright -->
-		<ul class="copyright">
-			<li>&copy; Bobbygrdn All rights reserved | 2024</li>
-		</ul>
 
 	</div>
 
@@ -253,6 +254,7 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/tabs.js"></script>
+	<script src="assets/js/sections.js"></script>
 
 </body>
 
